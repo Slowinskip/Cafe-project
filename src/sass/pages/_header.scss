@@ -11,100 +11,97 @@ $fontBlack: 'Source Sans Pro', Black 900;
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
-    background-image: url(../images/background.png);
-    background-size: 100% 100%;
-    background-position: center;
-    height: 120vh;
-    max-width: 100%;
-    position: relative;
+  background-image: url(../images/background.png);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 120vh;
+  max-width: 100%;
+  position: relative;
 
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
-        .header-title {
-            padding-top: 10px;
-            color: $whiteColor;
+    .header-title {
+      padding-top: 10px;
+      color: $whiteColor;
 
-            h1 {
-                line-height: 10px;
-                letter-spacing: 10px;
-            }
+      h1 {
+        line-height: 10px;
+        letter-spacing: 10px;
+      }
 
-            h3 {
-                font-size: 15px;
-                letter-spacing: 5px;
+      h3 {
+        font-size: 15px;
+        letter-spacing: 5px;
 
-            }
+      }
 
-        }
-
-        .header-nav {
-            text-align: right;
-            padding-top: 30px;
-
-            a {
-                color: $whiteColor;
-                text-decoration: none;
-                padding-left: 20px;
-                letter-spacing: 2px;
-
-
-
-            }
-        }
-
-        .header-sub-title {
-            color: $primaryColor;
-            font-size: 50px;
-            padding: 60px 55px;
-            font-family: $fontRegular;
-            position: relative;
-            letter-spacing: 12px;
-
-
-            h1 {
-                line-height: 50px;
-
-            }
-
-            .sub-title-2 {
-                text-align: right;
-                position: relative;
-
-            }
-
-        }   
-
-        .header-sub-title::after {
-            position: absolute;
-            content: '';
-            bottom: 20px;
-            left: 50%;
-            width: 300px;
-            height: 5px;
-            transform: translateX(-50%);
-            background: #BEA67C;
-            border-radius: 5px;
-        }
-
-        .header-discover {
-            margin-top: 180px;
-            color: $whiteColor;
-            text-align: center;
-            letter-spacing: 5px;
-
-            .icon-arrow {
-                font-size: 35px;
-            }
-
-        }
     }
+
+    .header-nav {
+      text-align: right;
+      padding-top: 30px;
+
+      a {
+        color: $whiteColor;
+        text-decoration: none;
+        padding-left: 20px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .header-sub-title {
+      color: $primaryColor;
+      font-size: 50px;
+      padding: 60px 55px;
+      font-family: $fontRegular;
+      position: relative;
+      letter-spacing: 12px;
+
+
+      h1 {
+        line-height: 50px;
+
+      }
+
+      .sub-title-2 {
+        text-align: right;
+        position: relative;
+
+      }
+
+    }   
+
+    .header-sub-title::after {
+      position: absolute;
+      content: '';
+      bottom: 20px;
+      left: 50%;
+      width: 300px;
+      height: 5px;
+      transform: translateX(-50%);
+      background: #BEA67C;
+      border-radius: 5px;
+    }
+
+    .header-discover {
+      margin-top: 180px;
+      color: $whiteColor;
+      text-align: center;
+      letter-spacing: 5px;
+
+      .icon-arrow {
+        font-size: 35px;
+      }
+
+    }
+  }
 }
