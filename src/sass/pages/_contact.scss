@@ -1,0 +1,46 @@
+$primaryColor: #BEA67C;
+$whiteColor: #FFF;
+$blackColor: #000;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .title{
+    }
+
+    .form{
+        text-align: center;
+        margin-top: 50px;
+
+        label{
+            letter-spacing: 3px;
+            margin: 10px 0;
+        }
+        input{
+            width: 280px;
+        }
+        button{
+            margin: 10px 0;
+            padding: 15px 25px;
+            letter-spacing: 3px;
+            background: $primaryColor;
+            border: none;
+            color: $whiteColor;
+            text-align: center;
+
+
+        }
+  
+    }
+
+}

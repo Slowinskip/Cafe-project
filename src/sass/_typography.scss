@@ -1,0 +1,27 @@
+$primaryColor: #BEA67C;
+$whiteColor: #FFF;
+$blackColor: #000;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+      
+.title{
+    text-align: center;
+    position: relative;
+    color: $primaryColor;
+    letter-spacing: 10px;
+}
+.title::after {
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    width: 400px;
+    height: 3px;
+    transform: translateX(-50%);
+    background: #BEA67C;
+    border-radius: 5px;
+}
