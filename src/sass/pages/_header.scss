@@ -5,19 +5,34 @@
 *::after {
   box-sizing: border-box;
 }
+.header::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 200%;
+  opacity: 60%;
+  height: 120vh;
+  transform: translateX(-50%);
+  background: black;
+  border-radius: 5px;
+  z-index: 1;
 
+}  
 .header {
+  z-index: 99;
   background-image: url(../images/background.png);
   background-size: 100% 100%;
   background-position: center;
+  
   height: 120vh;
   max-width: 100%;
   position: relative;
   font-family: $fontFamily;
 
-
+  
 
   .container {
+    z-index: 99;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,8 +42,11 @@
       padding-top: 10px;
       color: $whiteColor;
       padding-left: 25px;
+      z-index: 99;
+
 
       h1 {
+        z-index: 99;
         line-height: 10px;
         letter-spacing: 10px;
         font-family: $fontFamily;
@@ -36,6 +54,7 @@
       }
 
       h3 {
+        z-index: 99;
         font-size: 15px;
         letter-spacing: 5px;
         font-family: $fontFamily;
@@ -49,6 +68,8 @@
       padding-top: 30px;
       font-weight: regular;
       padding-right: 25px;
+      z-index: 99;
+
 
 
       a {
@@ -56,6 +77,8 @@
         text-decoration: none;
         padding-left: 20px;
         letter-spacing: 2px;
+        z-index: 99;
+
       }
     }
 
@@ -63,7 +86,7 @@
       color: $primaryColor;
       font-size: 50px;
       padding: 60px 130px;
-      
+      z-index: 99;
       position: relative;
       letter-spacing: 12px;
 
@@ -71,14 +94,14 @@
       h1 {
         line-height: 50px;
         font-family: $fontFamily;
-      
+        z-index: 99;
 
       }
 
       .sub-title-2 {
         text-align: right;
         position: relative;
-
+        z-index: 99;
       }
 
     }   
@@ -101,8 +124,11 @@
       text-align: center;
       letter-spacing: 5px;
       font-weight: 100;
+      z-index: 99;
+
       .icon-arrow {
         font-size: 35px;
+        z-index: 99;
       }
 
     }

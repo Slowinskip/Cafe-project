@@ -15,14 +15,38 @@ $blackColor: #000;
   letter-spacing: 10px;
   font-family: $fontFamily;
   font-weight: bold;
+  margin: 45px 0;
+  font-size: 25px;
 }
 
 .title::after {
   position: absolute;
   content: '';
-  bottom: -15px;
+  bottom: 10px;
   left: 50%;
-  width: 400px;
+  width: 450px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #BEA67C;
+  border-radius: 5px;
+}
+
+.product-title h1 {
+  font-family: $fontFamily;
+  font-weight: bold;
+  color: $blackColor;
+  font-size: 30px;
+  letter-spacing: 4px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.product-title h1::after {
+  position: absolute;
+  content: '';
+  bottom: -35px;
+  left: 10%;
+  width: 100px;
   height: 3px;
   transform: translateX(-50%);
   background: #BEA67C;
