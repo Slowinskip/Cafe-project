@@ -1,12 +1,5 @@
-$primaryColor: #BEA67C;
-$whiteColor: #FFF;
-$blackColor: #000;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 .contact{
   display: flex;
@@ -14,6 +7,9 @@ $blackColor: #000;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 20px;
+  font-family: $fontFamily;
+
+
 
   .form{
     text-align: center;
@@ -22,14 +18,17 @@ $blackColor: #000;
     label{
       letter-spacing: 3px;
       margin: 10px 0;
+      font-weight: bold;
     }
 
     input{
       width: 280px;
       border: 2px solid $blackColor;
+      margin: 10px 0;
     }
+
     .text-area{
-        height: 100px;
+      height: 100px;
     }
 
     button{
@@ -40,6 +39,8 @@ $blackColor: #000;
       border: none;
       color: $whiteColor;
       text-align: center;
+      font-weight: bold;
+
 
 
     }

@@ -13,6 +13,8 @@ $blackColor: #000;
   position: relative;
   color: $primaryColor;
   letter-spacing: 10px;
+  font-family: $fontFamily;
+  font-weight: bold;
 }
 
 .title::after {

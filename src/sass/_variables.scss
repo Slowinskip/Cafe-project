@@ -1,3 +1,11 @@
 $primaryColor: #BEA67C;
 $whiteColor: #FFF;
 $blackColor: #000;
+
+$fontFamily: 'Source Sans Pro', sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

@@ -1,12 +1,4 @@
-$primaryColor: #BEA67C;
-$whiteColor: #FFF;
-$blackColor: #000;
 
-$fontRegular: 'Source Sans Pro', Regular 400;
-$fontSemiBold: 'Source Sans Pro', SemiBold 600;
-$fontSemiBoldItalic: 'Source Sans Pro', SemiBold 600 Italic;
-$fontBold: 'Source Sans Pro', Bold 700;
-$fontBlack: 'Source Sans Pro', Black 900;
 
 *,
 *::before,
@@ -21,6 +13,8 @@ $fontBlack: 'Source Sans Pro', Black 900;
   height: 120vh;
   max-width: 100%;
   position: relative;
+  font-family: $fontFamily;
+
 
 
   .container {
@@ -32,16 +26,20 @@ $fontBlack: 'Source Sans Pro', Black 900;
     .header-title {
       padding-top: 10px;
       color: $whiteColor;
+      padding-left: 25px;
 
       h1 {
         line-height: 10px;
         letter-spacing: 10px;
+        font-family: $fontFamily;
+        font-weight: bold;
       }
 
       h3 {
         font-size: 15px;
         letter-spacing: 5px;
-
+        font-family: $fontFamily;
+      
       }
 
     }
@@ -49,6 +47,9 @@ $fontBlack: 'Source Sans Pro', Black 900;
     .header-nav {
       text-align: right;
       padding-top: 30px;
+      font-weight: regular;
+      padding-right: 25px;
+
 
       a {
         color: $whiteColor;
@@ -61,14 +62,16 @@ $fontBlack: 'Source Sans Pro', Black 900;
     .header-sub-title {
       color: $primaryColor;
       font-size: 50px;
-      padding: 60px 55px;
-      font-family: $fontRegular;
+      padding: 60px 130px;
+      
       position: relative;
       letter-spacing: 12px;
 
 
       h1 {
         line-height: 50px;
+        font-family: $fontFamily;
+      
 
       }
 
@@ -97,7 +100,7 @@ $fontBlack: 'Source Sans Pro', Black 900;
       color: $whiteColor;
       text-align: center;
       letter-spacing: 5px;
-
+      font-weight: 100;
       .icon-arrow {
         font-size: 35px;
       }
