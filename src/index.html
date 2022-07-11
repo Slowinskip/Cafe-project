@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,7 +61,7 @@
             <div class="product-list col-8">
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1 >01. LA LAGARTIJA</h1>
+                        <h1>01. LA LAGARTIJA</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
@@ -69,13 +70,16 @@
                             delicious flavor.
                         </p>
                     </div>
-                    <div class="product-rating col-12">
+                    <div class="product-rating col-7">
                         <h2>
                             ROASTING: <span class="rating">5/10</span>
                         </h2>
                         <h2>
                             INTENSITY: <span class="rating">6/10</span>
                         </h2>
+                    </div>
+                    <div class="number-1 col-5">
+                        <img src="/images/Przechwytywanie.png" alt="foto">
                     </div>
                 </div>
                 <div class="foto col-6">
@@ -86,7 +90,7 @@
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1 >02. EL TIGRE</h1>
+                        <h1>02. EL TIGRE</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
@@ -106,7 +110,7 @@
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1 >03. LA CUCARACHA</h1>
+                        <h1>03. LA CUCARACHA</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
@@ -130,31 +134,61 @@
             </div>
         </div>
     </div>
-
-    
     <div class="about">
-        <div class="title col-12">
+        <div class="title-about col-12">
             <h1>ABOUT US</h1>
         </div>
-        <div class="flex">
-            <div class="about-text col-6">
-                <p>
-                    Who are we? Just a bunch of friends width <BR>
-                    a love for a good coffe and desire to create <BR>
-                    comething new, something original.
-                </p>
-                <p>
-                    Our coffes reflect us - young, wild and free. <BR>
-                    We are on the journey of new tastes...
-                </p>
-            </div>
-            <div class="join col-7">
-                <p>Join Us!</p>
+        <div class="carol col-6">
+            <div class="main-carousel">
+                <div class="carousel-cell col-12">
+                    <div class="box-image col-4">
+                    <img src="/images/1.png" alt="foto">
+                    </div>
+                    <div class="box-description col-8">
+                        <h2 class="box-tittle">Ping <span class="bold">Nihao</span></h2>
+                        <p>
+                            Ping is the youngest in the team. He doesn't<br>
+                            like calling coffe a mysterious act.<br>
+                            He says, a good coffe is like a mathematical<br>
+                            formula. Once you figured in out, every<br>
+                            coffe  you make is a masterpiece.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell col-12">
+                    <div class="box-image col-4">
+                        <img src="/images/2.png" alt="foto">
+                    </div>
+                    <div class="box-description col-8">
+                        <h2 class="box-tittle">Max <span class="bold">Selfish</span></h2>
+                        <p>
+                           Max is the austrian barist with yeats of<br>
+                           experience from the gotels across the whole<br>
+                           Europe. "Venezuela coffe was a lightening<br>
+                           experience for me! I have never drink such<br>
+                           an amazing coffe!", he says.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-cell col-12">
+                    <div class="box-image col-4">
+                        <img src="/images/3.png" alt="foto">
+                    </div>          
+                    <div class="box-description col-8">
+                    <h2 class="box-tittle">Elizabeth <span class="bold">Doherty</span></h2>
+                    <p>
+                        Experienced barist from Bagamas<br>
+                        She says that Venezuela has opened her<br>
+                        eyes on caffee. "It's not about the taste", she<br>
+                        says. "It's all about the feelings".
+                    </p>
+                </div>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>
 </html>

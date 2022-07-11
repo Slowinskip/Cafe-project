@@ -1,51 +1,94 @@
 .about::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    width: 200%;
-    opacity: 60%;
-    height: 90vh;
-    transform: translateX(-50%);
-    background: black;
-    border-radius: 5px;
-    z-index: 1;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  opacity: 60%;
+  height: 90vh;
+  background: black;
+  border-radius: 5px;
+  z-index: 1;
 }
+
+.title-about{
+  text-align: center;
+  position: relative;
+  color: $primaryColor;
+  letter-spacing: 10px;
+  font-family: $fontFamily;
+  font-weight: bold;
+  margin: 25px 0;
+  font-size: 25px;
+  z-index: 99;
+  height: 20vh;
+}
+
+.title-about::after {
+  position: absolute;
+  content: '';
+  bottom: 20px;
+  left: 50%;
+  width: 650px;
+  height: 3px;
+  transform: translateX(-50%);
+  background: #BEA67C;
+  border-radius: 5px;
+}
+
 .about {
-    background-image: url(../images/about-us.jpg);
-    height: 90vh;
-    background-size: 100%;
-    position: relative;
+  background-image: url(../images/about-us.jpg);
+  height: 90vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+  font-family: $fontFamily;
+  letter-spacing: 1px;
+  z-index: 99;
+
+
+
+  .main-carousel{
     z-index: 99;
+    margin-bottom: 110px;
 
+  }
+
+  .carousel-cell{
+    display: flex;
+    flex-direction: row;
+    color: $whiteColor;
     
-    .flex{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        z-index: 99;
+    p{
+      font-style: italic;
+      font-size: 20px;
+      font-weight: bold;
+      
 
-        .about-text{
-            z-index: 99;
-        }
-        p{
-            color: $whiteColor;
-            font-family: $fontFamily;
-            font-size: 30px;
-            font-style: italic;
-            font-weight: bold;
-            letter-spacing: 2px;
-            z-index: 99;
-        }
 
-        .join{
-            text-align: right;
-            margin-top: 15px;
-            z-index: 99;
-        }
     }
-    div{
-        border:1px solid rgba(255, 0, 0, 0);
-    }
+  }
 
+  .box-image img{
+    height: 80%;
+    padding-left: 30px;
+  }
+
+  .box-description{
+    padding-left: 30px;
+  }
+
+  .bold{
+    font-weight: 900;
+  }
+
+
+ 
+
+  
 }
