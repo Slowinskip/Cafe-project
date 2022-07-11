@@ -1,0 +1,51 @@
+.about::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 200%;
+    opacity: 60%;
+    height: 90vh;
+    transform: translateX(-50%);
+    background: black;
+    border-radius: 5px;
+    z-index: 1;
+}
+.about {
+    background-image: url(../images/about-us.jpg);
+    height: 90vh;
+    background-size: 100%;
+    position: relative;
+    z-index: 99;
+
+    
+    .flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        z-index: 99;
+
+        .about-text{
+            z-index: 99;
+        }
+        p{
+            color: $whiteColor;
+            font-family: $fontFamily;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            letter-spacing: 2px;
+            z-index: 99;
+        }
+
+        .join{
+            text-align: right;
+            margin-top: 15px;
+            z-index: 99;
+        }
+    }
+    div{
+        border:1px solid rgba(255, 0, 0, 0);
+    }
+
+}

@@ -15,8 +15,9 @@ $blackColor: #000;
   letter-spacing: 10px;
   font-family: $fontFamily;
   font-weight: bold;
-  margin: 45px 0;
+  margin: 65px 0;
   font-size: 25px;
+  z-index: 99;
 }
 
 .title::after {
@@ -24,7 +25,7 @@ $blackColor: #000;
   content: '';
   bottom: 10px;
   left: 50%;
-  width: 450px;
+  width: 650px;
   height: 3px;
   transform: translateX(-50%);
   background: #BEA67C;

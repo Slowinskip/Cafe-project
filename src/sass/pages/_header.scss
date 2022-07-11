@@ -5,6 +5,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 .header::before {
   position: absolute;
   content: '';
@@ -18,6 +19,7 @@
   z-index: 1;
 
 }  
+
 .header {
   z-index: 99;
   background-image: url(../images/background.png);
@@ -69,9 +71,7 @@
       font-weight: regular;
       padding-right: 25px;
       z-index: 99;
-
-
-
+      
       a {
         color: $whiteColor;
         text-decoration: none;
