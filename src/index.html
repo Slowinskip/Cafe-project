@@ -35,7 +35,19 @@
         </div>
     </header>
 
-    <div>
+    <div id="pages">
+        <section id="products">
+          <div id="products-list" class="product-list container"></div>
+        </section>
+        <section id="contact">
+          <div class="contact-wrapper container"></div>
+        </section>
+        <section id="home">
+            <div id="home-wrapper" class="home-wrapper container"></div>
+            </section>
+    </div>
+
+    <script id="template-contact-page" type="text/x-handlebars-template">
         <div class="contact">
             <div class="title col-12">
                 <h1>CONTACT US</h1>
@@ -49,11 +61,10 @@
                 <input class="text-area" type="text" id="message" name="message"><br>
                 <button type="submit" value="submit">SUBMIT</button>
             </div>
-
         </div>
-    </div>
+        </script>
 
-    <div>
+    <script id="template-products-page" type="text/x-handlebars-template">
         <div class="products">
             <div class="title col-12">
                 <h1>PRODUCTS</h1>
@@ -61,7 +72,7 @@
             <div class="product-list col-8">
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>01. LA LAGARTIJA</h1>
+                        <h1>01. {{ name }}</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
@@ -133,7 +144,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </script>
+
+
+    <script id="template-about-page" type="text/x-handlebars-template">
+
     <div class="about">
         <div class="title-about col-12">
             <h1>ABOUT US</h1>
@@ -173,21 +188,23 @@
                 <div class="carousel-cell col-12">
                     <div class="box-image col-4">
                         <img src="/images/3.png" alt="foto">
-                    </div>          
+                    </div>
                     <div class="box-description col-8">
-                    <h2 class="box-tittle">Elizabeth <span class="bold">Doherty</span></h2>
-                    <p>
-                        Experienced barist from Bagamas<br>
-                        She says that Venezuela has opened her<br>
-                        eyes on caffee. "It's not about the taste", she<br>
-                        says. "It's all about the feelings".
-                    </p>
-                </div>
+                        <h2 class="box-tittle">Elizabeth <span class="bold">Doherty</span></h2>
+                        <p>
+                            Experienced barist from Bagamas<br>
+                            She says that Venezuela has opened her<br>
+                            eyes on caffee. "It's not about the taste", she<br>
+                            says. "It's all about the feelings".
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="js/app.js" type="module"></script>
 </body>

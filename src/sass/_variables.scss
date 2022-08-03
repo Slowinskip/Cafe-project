@@ -9,3 +9,11 @@ $fontFamily: 'Source Sans Pro', sans-serif;
 *::after {
   box-sizing: border-box;
 }
+
+// .section {
+//   opacity: 0%;
+// }
+
+.active {
+  opacity: 100%;
+}
