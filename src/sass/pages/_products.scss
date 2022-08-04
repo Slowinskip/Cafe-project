@@ -1,10 +1,11 @@
 .products{
+
   font-family: $fontFamily;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  position: relative;
+  position: absolute;
 
   .product-list{
     display: flex;

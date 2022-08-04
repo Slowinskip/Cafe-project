@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container-header">
             <div class="header-title col-5">
                 <h1>EL TIGRE</h1>
                 <h3>VENEZUELA CAFFE BEANS</h3>
@@ -24,9 +24,7 @@
                 <a href="#contact">CONTACT</a>
 
             </div>
-            <div class="header-sub-title col-12">
-                <h1 class="sub-title-1">HOME OF</h1>
-                <h1 class="sub-title-2">ORIGINAL TASTES</h1>
+            <div id="header-sub-title" class="header-sub-title col-12">
             </div>
             <div class="header-discover col-12">
                 <h2>DISCOVER</h2>
@@ -36,16 +34,32 @@
     </header>
 
     <div id="pages">
-        <section id="products">
-          <div id="products-list" class="product-list container"></div>
+        <section id="products" class="container visit">
+          <div id="products-list" class="product-list "></div>
         </section>
-        <section id="contact">
-          <div class="contact-wrapper container"></div>
+        <section id="contact" class="container">
+          <div id="contact-wrapper" class="contact-wrapper "></div>
         </section>
-        <section id="home">
-            <div id="home-wrapper" class="home-wrapper container"></div>
+        <section id="home" class="container">
+            <div id="home-wrapper" class="home-wrapper "></div>
             </section>
     </div>
+
+    <script id="template-title-1" type="text/x-handlebars-template">
+        <h1 class="sub-title-1">HOME OF </h1>
+        <h1 class="sub-title-2">ORIGINAL TASTES</h1>
+    </script>
+    <script id="template-title-2" type="text/x-handlebars-template">
+
+        <h1 class="sub-title-1">REAL VENEZUELA</h1>
+        <h1 class="sub-title-2">REAL COFFEE</h1>
+    </script>
+    <script id="template-title-3" type="text/x-handlebars-template">
+
+        <h1 class="sub-title-1">TASTE REAL</h1>
+        <h1 class="sub-title-2">VENEZUELA</h1>
+    </script>
+
 
     <script id="template-contact-page" type="text/x-handlebars-template">
         <div class="contact">
