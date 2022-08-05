@@ -1,37 +1,36 @@
 {
-    "products":[
-       {
-          "id":"cafe-1",
-          "name":"LA LAGARTIJA",
-          "price":"36",
-          "newPrice":"25",
-          "description":"Mysterious and treachorous... The best choice for the start of your journey! It will procide you a rich delicious flavor.",
-          "images":[
-             "<img class=\"active\" src=\"images/coffee-1.png\">"
-          ],
-          "roasting":"5/10",
-          "intensity":"6/10"
-       },
-       {
-        "id":"cafe-2",
-        "name":"EL TIGRE",
-        "description":"Really dark coffe, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
-        "images":[
-            "<img class=\"active\" src=\"images/coffee-2.png\">"
-         ],
-        "roasting":"8/10",
-        "intensity":"9/10"
-        },
-        {
-        "id":"cafe-3",
-        "name":"LA CUCARACHA",
-        "description":"Sweet and intense with a bif amount of different flavors. Caramel, grapes, strwaberry, you name it! It's great choice for warm summer days.",
-        "images":[
-            "<img class=\"active\" src=\"images/coffee-3.png\">"
+    "products":{
+        "cafe1": {
+            "name": "LA LAGARTIJA",
+            "price":"36",
+            "newPrice":"25",
+            "description":"Mysterious and treachorous... The best choice for the start of your journey! It will procide you a rich delicious flavor.",
+            "images":[
+                "/images/coffee-1.png"
             ],
-        "roasting":"3/10",
-        "intensity":"7/10"
+            "roasting":"5/10",
+            "intensity":"6/10"
+  
+        },
+        "cafe2": {
+            "name": "EL TIGRE",
+            "description":"Really dark coffe, only for the real gourmets. It has bitter flavor of grapefruits and is mixed with a little bit of peanuts with caramel.",
+            "images":[
+                "/images/coffee-2.png"
+             ],
+            "roasting":"8/10",
+            "intensity":"9/10"
+    
+        },
+        "cafe3": {
+            "name": "EL TIGRE",
+            "description":"Sweet and intense with a bif amount of different flavors. Caramel, grapes, strwaberry, you name it! It's great choice for warm summer days.",
+            "images":[
+                "/images/coffee-3.png"
+                ],
+            "roasting":"3/10",
+            "intensity":"7/10"
+    
         }
-    ]
+    }
 }
-

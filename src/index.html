@@ -86,21 +86,20 @@
             <div class="product-list col-8">
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>01. {{ name }}</h1>
+
+                        <h1>01. {{ cafe1.name }}</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
-                            Mysterious and treachorous... The best choice for <br>
-                            the start of your journey! It will procide you a rich <br>
-                            delicious flavor.
+                            {{ cafe1.description }} 
                         </p>
                     </div>
                     <div class="product-rating col-7">
                         <h2>
-                            ROASTING: <span class="rating">5/10</span>
+                            ROASTING: <span class="rating">{{ cafe1.roasting }}</span>
                         </h2>
                         <h2>
-                            INTENSITY: <span class="rating">6/10</span>
+                            INTENSITY: <span class="rating">{{ cafe1.intensity }}</span>
                         </h2>
                     </div>
                     <div class="number-1 col-5">
@@ -108,53 +107,49 @@
                     </div>
                 </div>
                 <div class="foto col-6">
-                    <img src="/images/coffee-1.png" alt="foto">
+                    <img src={{ cafe1.images }} alt="foto">
                 </div>
                 <div class="foto col-6">
-                    <img src="/images/coffee-2.png" alt="foto">
+                    <img src={{ cafe2.images }} alt="foto">
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>02. EL TIGRE</h1>
+                        <h1>02. {{ cafe2.name }}</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
-                            Really dark coffe, only for the real gourmets. It has <br>
-                            bitter flavor of grapefruits and is mixed with a little <br>
-                            bit of peanuts with caramel.
+                            {{ cafe2.description }}
                         </p>
                     </div>
                     <div class="product-rating col-12">
                         <h2>
-                            ROASTING: <span class="rating">8/10</span>
+                            ROASTING: <span class="rating">{{ cafe2.roasting }}</span>
                         </h2>
                         <h2>
-                            INTENSITY: <span class="rating">9/10</span>
+                            INTENSITY: <span class="rating">{{ cafe2.intensity }}</span>
                         </h2>
                     </div>
                 </div>
                 <div class="product col-6">
                     <div class="product-title col-12">
-                        <h1>03. LA CUCARACHA</h1>
+                        <h1>03. {{ cafe3.name }}</h1>
                     </div>
                     <div class="product-info col-9">
                         <p>
-                            Sweet and intense with a bif amount of different <br>
-                            flavors. Caramel, grapes, strwaberry, you name it! It's <br>
-                            great choice for warm summer days.
+                            {{ cafe3.description }}
                         </p>
                     </div>
                     <div class="product-rating col-12">
                         <h2>
-                            ROASTING: <span class="rating">3/10</span>
+                            ROASTING: <span class="rating">{{ cafe3.roasting }}</span>
                         </h2>
                         <h2>
-                            INTENSITY: <span class="rating">7/10</span>
+                            INTENSITY: <span class="rating">{{ cafe3.intensity }}</span>
                         </h2>
                     </div>
                 </div>
                 <div class="foto col-6">
-                    <img src="/images/coffee-3.png" alt="foto">
+                    <img src={{ cafe3.images }} alt="foto">
                 </div>
             </div>
         </div>

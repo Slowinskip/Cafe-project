@@ -30,8 +30,9 @@ const app = {
       })
       .then((parsedResponse) => {
         thisApp.data.products = parsedResponse;
+        thisApp.initProduct();
       });
-      
+    
   },
 
   initPage: function(){
@@ -39,21 +40,15 @@ const app = {
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
-    console.log(thisApp.pages);
-    console.log(thisApp.navLinks);
 
     for(let clickedElement of thisApp.navLinks){
       clickedElement.addEventListener('click', function(){
         event.preventDefault();
         thisApp.clickId = clickedElement.getAttribute('href').replace('#','');
-        console.log(thisApp.clickId);
 
         const find = document.querySelector('#' + thisApp.clickId);
-        console.log(find);
         for(let pages of thisApp.pages){
-          console.log(pages);
           const href = pages.getAttribute('id');
-          console.log(href);
 
           if(href == thisApp.clickId){
             find.classList.add(className.active);
@@ -99,7 +94,19 @@ const app = {
   },
 
   initProduct: function(){
-    const generatedHTML = templates.product();
+    const thisApp = this;
+    const dane = {
+      cafe1: 
+        {name: 'Johny'},
+
+      cafe2: 
+        {name: 'Sara'}
+      
+    };
+    console.log(thisApp.data.products.cafe1.images);
+      
+    
+    const generatedHTML = templates.product(thisApp.data.products);
     const createDOM = utils.createDOMFromHTML(generatedHTML);
     const container = document.querySelector(select.containerOf.products);
     container.appendChild(createDOM);
@@ -116,7 +123,6 @@ const app = {
   initFirstVisit: function() {
     
     const activeProduct = document.querySelector('#products');
-    console.log(activeProduct);
     activeProduct.classList.add(className.active);
   },
 
@@ -128,7 +134,7 @@ const app = {
     thisApp.initPage();
     thisApp.initAbout();
     thisApp.initFlicker();
-    thisApp.initProduct();
+    
     thisApp.initContact();
     
 
