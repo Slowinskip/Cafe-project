@@ -2,7 +2,7 @@
 
   font-family: $fontFamily;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
   position: relative;
@@ -54,10 +54,65 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 80%;
+        width: 100%;
         box-shadow: 2px 14px 20px 4px rgba(0, 0, 0, 0.401);
       }
 
     }
   }
+
+  .price{
+    position: relative;
+  }
+
+  .triangle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-right: 250px solid #eccc68;
+    border-bottom: 250px solid transparent;  }
+    
+    
+
+  .oldPrice{
+    position: absolute;
+    left: 75%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: white;
+    font-weight: 900;
+  }
+
+  .oldPrice::before {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 30px;
+    width: 4%;
+    height: 8vh;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 1px;
+    z-index: 1;
+    transform: rotate(90deg);
+  
+  }  
+
+  .newPrice{
+    position: absolute;
+    left: 85%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin-top: 100px;
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+  }
+  
 }
