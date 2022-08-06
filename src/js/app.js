@@ -38,6 +38,7 @@ const app = {
   initPage: function(){
     const thisApp = this;
 
+
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
@@ -45,15 +46,31 @@ const app = {
       clickedElement.addEventListener('click', function(){
         event.preventDefault();
         thisApp.clickId = clickedElement.getAttribute('href').replace('#','');
-
         const find = document.querySelector('#' + thisApp.clickId);
-        for(let pages of thisApp.pages){
-          const href = pages.getAttribute('id');
+        console.log(thisApp.clickId);
+        thisApp.products = document.querySelector('#products');
+        thisApp.home = document.querySelector('#home');
+        thisApp.contact = document.querySelector('#contact');
 
-          if(href == thisApp.clickId){
+        // eslint-disable-next-line no-unused-vars
+        for(let pages of thisApp.pages){
+          if(thisApp.clickId === 'home'){
+
+            thisApp.products.classList.add(className.active);
+            thisApp.home.classList.add(className.active);
+            thisApp.contact.classList.remove(className.active);
+
+          }
+          if(thisApp.clickId == 'products'){
             find.classList.add(className.active);
-          }else{
-            pages.classList.remove(className.active);
+            thisApp.home.classList.remove(className.active);
+            thisApp.contact.classList.remove(className.active);
+
+          }if(thisApp.clickId == 'contact'){
+            find.classList.add(className.active);
+            thisApp.home.classList.remove(className.active);
+            thisApp.products.classList.remove(className.active);
+
           }
         }
 
@@ -93,17 +110,9 @@ const app = {
     }
   },
 
+
   initProduct: function(){
     const thisApp = this;
-    const dane = {
-      cafe1: 
-        {name: 'Johny'},
-
-      cafe2: 
-        {name: 'Sara'}
-      
-    };
-    console.log(thisApp.data.products.cafe1.images);
       
     
     const generatedHTML = templates.product(thisApp.data.products);
@@ -123,14 +132,17 @@ const app = {
   initFirstVisit: function() {
     
     const activeProduct = document.querySelector('#products');
+    const activeProduct1 = document.querySelector('#home');
     activeProduct.classList.add(className.active);
+    activeProduct1.classList.add(className.active);
+
   },
 
   init: function(){
     const thisApp = this;
     thisApp.initData();
-    thisApp.initTitle();
     thisApp.initFirstVisit();
+    thisApp.initTitle();
     thisApp.initPage();
     thisApp.initAbout();
     thisApp.initFlicker();
