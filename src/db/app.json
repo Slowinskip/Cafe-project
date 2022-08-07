@@ -8,6 +8,10 @@
             "images":[
                 "/images/coffee-1.png"
             ],
+            "numberOne":[
+                "/images/Przechwytywanie.png"
+            ],
+
             "roasting":"5/10",
             "intensity":"6/10"
   
